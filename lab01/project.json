@@ -13,6 +13,10 @@
 
     "jsList" : [
         "src/resource.js",
-        "src/app.js"
+      "src/app.js",
+      "src/MenuScene.js",
+      "src/ActionScene_12.js",
+      "src/MySprite.js",
+      "src/ActionScene_12_E.js"
     ]
 }
