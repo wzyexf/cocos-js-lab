@@ -35,10 +35,18 @@
            var item4 = new cc.MenuItemFont("actionScaleBy", this.actionScaleBy, this);
            var item5 = new cc.MenuItemFont("programAction", this.programAction, this);
            var item6 = new cc.MenuItemFont("sequenceAction", this.sequenceAction, this);
+           var item6 = new cc.MenuItemFont("fadeout", this.fadeOut, this);
            var menu = new cc.Menu(item1, item2, item3, item4, item5, item6);
            menu.alignItemsVertically();
            this.addChild(menu, 1);
 
+       },
+       fadeOut:function()
+       {
+           console.log(this.bgSprite.status);
+           this.bgSprite.status = 3;
+
+           this.bgSprite.run();
        },
        actionMoveTo: function () {
 

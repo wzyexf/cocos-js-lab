@@ -22,6 +22,11 @@
                 var action = cc.moveBy(2, cc.p(50, 50));
                 this.runAction(action);
                 break;
+            case 3:
+                var action = cc.fadeOut(2);
+                this.runAction(action);
+                this.removeFromParent();
+                break;
         }
     }
 
